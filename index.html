@@ -52,28 +52,12 @@
         }
         [dir="rtl"] body { font-family: 'Cairo', sans-serif; }
 
-        /* Top Announcement Bar */
-        .announcement-bar {
-            background: #111827;
-            color: #f3e5ab;
-            text-align: center;
-            padding: 9px 15px;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            border-bottom: 1px solid var(--border-gold);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1001;
-        }
-
-        /* Navbar */
+        /* Navbar - مثبتة في الأعلى تماماً */
         nav {
-            position: fixed; top: 40px; width: 100%; z-index: 1000;
+            position: fixed; top: 0; width: 100%; z-index: 1000;
             background: var(--nav-bg); backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border-gold);
-            padding: 10px 5%; display: flex; justify-content: space-between; align-items: center;
+            padding: 12px 5%; display: flex; justify-content: space-between; align-items: center;
         }
         .brand {
             font-family: 'Cinzel', serif; font-size: 19px; font-weight: 700;
@@ -103,7 +87,7 @@
 
         /* Hero Section */
         .hero {
-            min-height: 90vh; padding: 160px 5% 70px;
+            min-height: 90vh; padding: 140px 5% 70px;
             display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
             background: radial-gradient(circle at top center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
             border-bottom: 1px solid var(--border-gold);
@@ -235,11 +219,6 @@
     </style>
 </head>
 <body>
-
-    <!-- Top Announcement Bar -->
-    <div class="announcement-bar" data-i18n="announcement">
-        🔥 Offre Spéciale : -50% sur l'installation pour les 10 premiers clients ! (Il reste 7 places)
-    </div>
 
     <!-- Navbar -->
     <nav>
@@ -458,7 +437,6 @@
 
         const TRANSLATIONS = {
             fr: {
-                announcement: "🔥 Offre Spéciale : -50% sur l'installation pour les 10 premiers clients ! (Il reste 7 places)",
                 offerBadge10: "⚡ Offre -50% (10 premiers clients)",
                 navPort: "Portfolio", navServ: "Services & Tarifs", navCont: "Contact",
                 heroBadge: "Agence Digitale • Restauration & Cadeaux Personnalisés",
@@ -492,7 +470,6 @@
                 rights: "Tous droits réservés."
             },
             ar: {
-                announcement: "🔥 عرض خاص: تخفيض 50% على رسوم التثبيت لأول 10 زبناء فقط! (متبقية 7 أماكن)",
                 offerBadge10: "⚡ عرض تخفيض 50% (أول 10 زبناء فقط)",
                 navPort: "أعمالنا", navServ: "الخدمات والأسعار", navCont: "تواصل معنا",
                 heroBadge: "وكالة رقمية • المطاعم وهدايا الحب الشخصية",
@@ -526,7 +503,6 @@
                 rights: "جميع الحقوق محفوظة."
             },
             en: {
-                announcement: "🔥 Special Offer: 50% off setup fee for the first 10 clients! (7 spots left)",
                 offerBadge10: "⚡ 50% Off (First 10 clients only)",
                 navPort: "Portfolio", navServ: "Services & Pricing", navCont: "Contact",
                 heroBadge: "Digital Agency • Hospitality & Romantic Gifts",
