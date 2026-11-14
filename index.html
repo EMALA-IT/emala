@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMALA Digital Studio | Solutions Digitales & Menus QR Luxury</title>
-    <meta name="description" content="EMALA Digital Studio - Création de Menus QR interactifs, sites web pour restaurants et sites web souvenirs romantiques personnalisés au Maroc.">
+    <meta name="description" content="EMALA Digital Studio - Création de Menus QR interactifs pour restaurants, sites vitrines professionnels et sites web souvenirs romantiques personnalisés au Maroc.">
+    <link rel="icon" type="image/png" href="logo.jpej">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -72,14 +73,19 @@
             position: fixed; top: 38px; width: 100%; z-index: 1000;
             background: var(--nav-bg); backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border-gold);
-            padding: 12px 5%; display: flex; justify-content: space-between; align-items: center;
+            padding: 10px 5%; display: flex; justify-content: space-between; align-items: center;
         }
         .brand {
-            font-family: 'Cinzel', serif; font-size: 20px; font-weight: 700;
-            color: var(--gold-dark); letter-spacing: 1.5px; text-decoration: none;
+            font-family: 'Cinzel', serif; font-size: 19px; font-weight: 700;
+            color: var(--gold-dark); letter-spacing: 1px; text-decoration: none;
             display: flex; align-items: center; gap: 10px;
         }
-        .brand span { font-size: 11px; color: var(--text-muted); font-family: 'Plus Jakarta Sans', sans-serif; letter-spacing: 2px; display: block; }
+        .brand img {
+            width: 44px; height: 44px; object-fit: cover; border-radius: 50%;
+            border: 2px solid var(--gold); background: #fff;
+        }
+        .brand div span { font-size: 10px; color: var(--text-muted); font-family: 'Plus Jakarta Sans', sans-serif; letter-spacing: 1.5px; display: block; }
+        
         .nav-right { display: flex; align-items: center; gap: 15px; }
         .nav-links { display: flex; gap: 20px; }
         .nav-links a { color: var(--text-main); text-decoration: none; font-size: 14px; font-weight: 500; transition: 0.3s; }
@@ -173,7 +179,6 @@
         }
         [dir="rtl"] .popular-badge { right: auto; left: 20px; }
         
-        /* ششارة عرض أول 10 زبناء */
         .card-badge-offer {
             background: rgba(197, 160, 89, 0.12);
             color: var(--gold-dark);
@@ -239,7 +244,7 @@
     <!-- Navbar -->
     <nav>
         <a href="#" class="brand">
-            <i class="fa-solid fa-crown"></i>
+            <img src="logo.jpeg" alt="EMALA Logo">
             <div>EMALA<span>DIGITAL STUDIO</span></div>
         </a>
         <div class="nav-right">
@@ -288,7 +293,7 @@
         </div>
 
         <div class="portfolio-grid">
-            <!-- Project 1: DAR ZAYTOUN (Demo Resto) -->
+            <!-- Project 1: DAR ZAYTOUN -->
             <div class="port-card">
                 <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=700&q=80" alt="Dar Zaytoun" class="port-img">
                 <div class="port-body">
@@ -303,7 +308,7 @@
                 </div>
             </div>
 
-            <!-- Project 2: CADEAU ROMANTIQUE / SOUVENIR (DEMO) -->
+            <!-- Project 2: CADEAU ROMANTIQUE -->
             <div class="port-card">
                 <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=700&q=80" alt="Cadeau Romantique" class="port-img">
                 <div class="port-body">
@@ -318,7 +323,7 @@
                 </div>
             </div>
 
-            <!-- Project 3: LE GOURMET (Demo Resto Pro) -->
+            <!-- Project 3: LE GOURMET -->
             <div class="port-card">
                 <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=80" alt="Le Gourmet" class="port-img">
                 <div class="port-body">
@@ -343,7 +348,7 @@
         </div>
 
         <div class="pricing-grid">
-            <!-- Pack 1: Cadeau Romantique -->
+            <!-- Pack 1 -->
             <div class="price-card">
                 <div>
                     <h3 data-i18n="pack1Name">Pack Cadeau Romantique</h3>
@@ -358,7 +363,7 @@
                 <a href="https://wa.me/212625753110?text=Bonjour%20EMALA,%20je%20suis%20intéressé%20par%20le%20Pack%20Cadeau%20Romantique%20(400%20DH)." target="_blank" class="btn-outline" style="justify-content:center;" data-i18n="choosePack">Choisir ce pack</a>
             </div>
 
-            <!-- Pack 2: Menu QR Essentiel -->
+            <!-- Pack 2 -->
             <div class="price-card">
                 <div>
                     <div class="card-badge-offer" data-i18n="offerBadge10">⚡ Offre -50% (10 premiers clients)</div>
@@ -375,7 +380,7 @@
                 <a href="https://wa.me/212625753110?text=Bonjour%20EMALA,%20je%20suis%20intéressé%20par%20le%20Pack%20Menu%20QR%20Essentiel%20(500%20DH%20+%20199%20DH/mois)." target="_blank" class="btn-outline" style="justify-content:center;" data-i18n="choosePack">Choisir ce pack</a>
             </div>
 
-            <!-- Pack 3 (Featured): Restaurant Pro -->
+            <!-- Pack 3 (Featured) -->
             <div class="price-card featured">
                 <div class="popular-badge" data-i18n="popular">Le Plus Demandé</div>
                 <div>
@@ -429,7 +434,6 @@
             link.href = link.href.replace("212625753110", STUDIO_PHONE);
         });
 
-        // وظيفة تبديل الوضع (Dark / Light Mode)
         function toggleTheme() {
             document.body.classList.toggle('dark-mode');
             const isDark = document.body.classList.contains('dark-mode');
@@ -444,7 +448,6 @@
             }
         }
 
-        // الحفاظ على اختيار المستخدم للوضع عند تحديث الصفحة
         window.addEventListener('DOMContentLoaded', () => {
             const savedTheme = localStorage.getItem('theme');
             if (savedTheme === 'dark') {
@@ -469,10 +472,8 @@
                 viewDemo: "Tester la démo en direct",
                 p2Tag: "Cadeau Sur-Mesure • Page Web Souvenir",
                 p2Desc: "Une page web romantique personnalisée avec chronomètre des moments passés ensemble, galerie photos, lettre d'amour et musique d'ambiance.",
-                askGift: "Commander un cadeau",
                 p3Tag: "Restaurant & Snack • Panier WhatsApp",
                 p3Desc: "Plateforme complète avec panier de commande (calcul automatique), réservation de table avec saisie manuelle et avis Google Maps.",
-                askDemo: "Demander le lien démo",
                 servTitle: "Services & Tarifs",
                 servSub: "Des formules flexibles avec mise à jour illimitée et accompagnement continu.",
                 pack1Name: "Pack Cadeau Romantique", oneTime: "/ paiement unique",
@@ -505,10 +506,8 @@
                 viewDemo: "تجربة الموقع مباشرة",
                 p2Tag: "هدية مخصصة • صفحة ويب الذكريات",
                 p2Desc: "صفحة رومانسية مخصصة تحتوي على عداد زمني لمدة الحب، معرض صور، رسالة حب وموسيقى هادئة في الخلفية.",
-                askGift: "اطلب هدية رقمية",
                 p3Tag: "مطاعم وسناك • سلة طلبات واتساب",
                 p3Desc: "منصة متكاملة تشمل سلة الطلبات وحساب المجموع، حجز الطاولات وتقييمات جوجل.",
-                askDemo: "اطلب رابط التجربة",
                 servTitle: "الخدمات والأسعار",
                 servSub: "باقات مرنة تشمل التحديثات المستمرة والدعم الفني.",
                 pack1Name: "باقة الهدية الرومانسية", oneTime: "/ تدفع مرة واحدة",
@@ -541,25 +540,23 @@
                 viewDemo: "Launch Live Demo",
                 p2Tag: "Custom Gift • Romantic Memory Page",
                 p2Desc: "A personalized romantic web page featuring a love-time counter, photo gallery, love letter, and background music.",
-                askGift: "Order a Gift",
                 p3Tag: "Restaurant & Bistro • WhatsApp Cart",
-                p3Desc: "Complete platform with ordering cart, manual guest table booking, and Google Maps reviews.",
-                askDemo: "Request Demo Link",
+                p3Desc: "Complete platform with ordering cart, manual table booking, and Google Maps reviews.",
                 servTitle: "Services & Pricing",
-                servSub: "Flexible plans with unlimited menu updates and ongoing support.",
+                servSub: "Flexible packages with unlimited updates and continuous support.",
                 pack1Name: "Romantic Gift Pack", oneTime: "/ one-time payment",
-                setupFee: "/ initial setup", monthlySub: "+ 199 DH / month (Maintenance & Updates)",
-                p1f1: "Private & fully customized web page", p1f2: "Love time counter (Days/Hours)",
-                p1f3: "Photo gallery & personal message", p1f4: "Romantic background music",
+                setupFee: "/ setup fee", monthlySub: "+ 199 DH / month (Maintenance & Updates)",
+                p1f1: "Private & personalized web page", p1f2: "Love time counter (Days/Hours)",
+                p1f3: "Photo gallery & Personal message", p1f4: "Romantic background music",
                 pack2Name: "Essential QR Menu Pack",
-                p2f1: "Interactive Digital Menu + Photos", p2f2: "Print-ready QR Code",
-                p2f3: "Google Maps Location & 5⭐ Review button", p2f4: "Unlimited price & dish updates",
-                popular: "Most Popular", pack3Name: "Restaurant Pro Pack",
-                p3f1: "Everything + WhatsApp Cart", p3f2: "Smart Table Reservation System",
-                p3f3: "Multilingual (French, Arabic, English)", p3f4: "Daily Promotions Banner & Priority Support",
-                choosePack: "Select this pack",
-                contTitle: "Ready to digitize your business or gift a unique memory?",
-                contSub: "Contact us today to receive your tailored preview within 24 hours.",
+                p2f1: "Interactive digital menu + Photos", p2f2: "High-definition QR code ready to print",
+                p2f3: "Location button & 5⭐ Google Reviews", p2f4: "Unlimited price and dish updates",
+                popular: "Most Popular", pack3Name: "Pro Restaurant Pack",
+                p3f1: "All QR Menu + WhatsApp Cart", p3f2: "Table reservation system",
+                p3f3: "Multilingual (French, Arabic, English)", p3f4: "Promotions banner & Priority support",
+                choosePack: "Choose this pack",
+                contTitle: "Ready to digitize your business or give a unique gift?",
+                contSub: "Contact us now to get your personalized mockup within 24h.",
                 rights: "All rights reserved."
             }
         };
@@ -570,11 +567,10 @@
             document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
 
+            const t = TRANSLATIONS[lang];
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');
-                if (TRANSLATIONS[lang][key]) {
-                    el.innerHTML = TRANSLATIONS[lang][key];
-                }
+                if (t[key]) el.innerHTML = t[key];
             });
         }
     </script>
